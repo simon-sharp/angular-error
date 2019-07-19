@@ -1,0 +1,9 @@
+<div>
+    <div (click)="toggleNavigation()">Toggle Navigation</div>
+    <app-client-navigation
+        *ngIf="showNavigation"
+        (closeNavigation)="closeNavigation()"
+    ></app-client-navigation>
+
+    <div>Help Content</div>
+</div>
